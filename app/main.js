@@ -4,8 +4,9 @@ import MoneyController from "./Controllers/MoneyController.js";
 class App {
   constructor() {
     valuesController: new ValuesController();
-    moneyController: new MoneyController();
+    console.log("App constructed...");
   }
+  moneyController = new MoneyController();
 }
 
 window["app"] = new App();

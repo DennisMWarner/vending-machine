@@ -7,6 +7,9 @@ let _state = {
 
 //Public
 export default class MoneyService {
+  constructor() {
+    console.log("MoneyService constructed...");
+  }
   get Money() {
     return _state.amount;
   }
